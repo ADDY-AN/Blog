@@ -24,7 +24,7 @@ const YourBlogs = () => {
         const token = localStorage.getItem("token");
 
         const res = await axios.get(
-          `http://localhost:8000/api/v1/blog/user/${user._id}`,
+          `https://blog-4w1y.onrender.com/api/v1/blog/user/${user._id}`,
           {
             withCredentials: true,
             headers: {

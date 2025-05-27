@@ -13,7 +13,7 @@ const BlogPage = () => {
   const fetchBlog = async () => {
     try {
       setLoading(true);
-      const response = await axios.get(`http://localhost:8000/api/v1/blog/${blogId}`, {
+      const response = await axios.get(`https://blog-4w1y.onrender.com/api/v1/blog/${blogId}`, {
         withCredentials: true,
       });
       if (response.data.success) {

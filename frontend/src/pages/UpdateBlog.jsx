@@ -85,7 +85,7 @@ const UpdateBlog = () => {
         const token = localStorage.getItem("token");
         try {
             const response = await axios.delete(
-                `http://localhost:8000/api/v1/blog/delete/${blogId}`,
+                `https://blog-4w1y.onrender.com/api/v1/blog/delete/${blogId}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,

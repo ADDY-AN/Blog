@@ -9,7 +9,7 @@ const Blog = () => {
 
   const fetchBlogs = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/api/v1/blog/explore", {
+      const response = await axios.get("https://blog-4w1y.onrender.com/api/v1/blog/explore", {
         withCredentials: true,
       });
       if (response.data.success) {

@@ -80,7 +80,7 @@ const Navbar = () => {
   const logoutHandler = async () => {
     try {
       dispatch(setloading(true));
-      const res = await axios.get('http://localhost:8000/api/v1/user/logout', { withCredentials: true });
+      const res = await axios.get('https://blog-4w1y.onrender.com/api/v1/user/logout', { withCredentials: true });
       if (res.data.success) {
         dispatch(logout())
 
