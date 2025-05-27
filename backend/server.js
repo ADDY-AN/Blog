@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-  origin: ["http://localhost:5173", "https://blog-4w1y.onrender.com"], // add your frontend Render domain
+  origin: ["http://localhost:5173"], // add your frontend Render domain
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE"],
 }));
