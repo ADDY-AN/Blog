@@ -58,7 +58,7 @@ const UpdateBlog = () => {
 
         try {
             const response = await axios.put(
-                `http://localhost:8000/api/v1/blog/${blogId}`,
+                `https://blog-4w1y.onrender.com/api/v1/blog/${blogId}`,
                 formData,
                 {
                     headers: {
